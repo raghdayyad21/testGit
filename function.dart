@@ -21,7 +21,7 @@ printItems(ItemList,'Fruits');
    print(title);
    int index=1;
    for(String item in items){
-    print('$index . $item \n');
+    print('$index . $item \n .');
     index++;
    }
  }
