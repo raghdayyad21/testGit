@@ -18,7 +18,7 @@ printItems(ItemList,'Fruits');
   }else print('Invalid email for user $username');
  }
  void printItems(List<String> items ,[String title ='Item List']){
-   print(title);
+   print("$title : ");
    int index=1;
    for(String item in items){
     print('$index . $item \n .');
