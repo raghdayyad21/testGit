@@ -1,13 +1,13 @@
 
 void main (){
-greet(name: "raghd");
-greet(name: "reema" ,greeting: "Welcome");
+greeting(name: "raghd");
+greeting(name: "reema" ,greeting: "Welcome");
 registerUser(username: "raghd", email: "raghdayyad@gmail.com");
 List<String> ItemList = ['Fruits', "Banana", 'Grapes'];
 printItems(ItemList,'Fruits');
 }
 
- void greet({required String name ,String greeting  =  'Hello' }){
+ void greeting({required String name ,String greeting  =  'Hello' }){
   print('$greeting , $name '); 
  }
 
