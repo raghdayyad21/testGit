@@ -2,7 +2,7 @@
 void main (){
 greet(name: "raghd");
 greet(name: "reema" ,greeting: "Welcome");
-String user =registerUser(username: "raghs", email: "raghd ayyad");
+registerUser(username: "raghd", email: "raghdayyad@gmail.com");
 
 }
 
@@ -10,6 +10,10 @@ String user =registerUser(username: "raghs", email: "raghd ayyad");
   print('$greeting , $name '); 
  }
 
- String registerUser({required String username ,required String email}){
-   return "User $username registered with email $email";
+ void registerUser({required String username ,required String email}){
+  if(email.contains("@")){
+    print("your email is Valid /n User $username registered with email $email");
+  
+  }else print('Invalid email for user $username');
  }
+ 
